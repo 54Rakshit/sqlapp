@@ -19,9 +19,9 @@ namespace sqlapp.Controllers
         public IActionResult Index()
         {
             //IEnumerable<Course> _course_lst = _courseService.GetCourse();
-            //IEnumerable<Course> _course_lst1 = _courseService.GetCourse1(_configuration.GetConnectionString("SQLConnection"));
-            IEnumerable<Course> _course_lst = _courseService.GetCourses().GetAwaiter().GetResult();
-            return View(_course_lst);
+            IEnumerable<Course> _course_lst1 = _courseService.GetCourse1(_configuration.GetConnectionString("SQLConnection"));
+            //IEnumerable<Course> _course_lst = _courseService.GetCourses().GetAwaiter().GetResult();
+            return View(_course_lst1);
         }
     }
 }

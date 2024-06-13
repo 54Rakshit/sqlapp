@@ -17,10 +17,10 @@ namespace sqlapp.Controllers
             _configuration = _config;
         }
 
-        public IActionResult Index()
-        {
-            IEnumerable<Employee> _employee_lst = _employeeService.GetEmployees().GetAwaiter().GetResult();
-            return View(_employee_lst);
-        }
+        //public IActionResult Index()
+        //{
+        //    IEnumerable<Employee _employee_lst = _employeeService.GetEmployees().GetAwaiter().GetResult();
+        //    return View(_employee_lst);
+        //}
     }
 }

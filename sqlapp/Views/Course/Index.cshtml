@@ -7,28 +7,23 @@
 </head>
 <body>
     <div class="text-center mt-4">
-        <h1 class="display-4">List of Employees - Staging ENV</h1>
     </div>
     <div class="container mt-4">
         <table class="table table-striped table-hover table-bordered">
             <thead class="table-dark">
                 <tr>
-                    <th scope="col">Employee ID</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Hire Date</th>
+                    <th scope="col">Course ID</th>
+                    <th scope="col"> Course Name</th>
+                    <th scope="col">Rating</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var employee in Model)
+                @foreach (var course in Model)
                 {
                     <tr>
-                        <th scope="row">@employee.employee_id</th>
-                        <td>@employee.first_name</td>
-                        <td>@employee.last_name</td>
-                        <td>@employee.email</td>
-                        <td>@employee.hire_date.ToString("yyyy-MM-dd")</td>
+                        <th scope="row">@course.CourseID</th>
+                        <td>@course.CourseName</td>
+                        <td>@course.Rating</td>
                     </tr>
                 }
             </tbody>
